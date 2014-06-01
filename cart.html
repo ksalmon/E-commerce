@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>EDGE | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        <script type="text/javascript" src=""></script>
+    
+</head>
+<body id="top">
+   
+  <div id="full">
+        <header id="ha-header" class="ha-header ha-header-large">
+            <div class="ha-header-perspective">
+                <div class="ha-header-front">
+                    <h1><span><a data-scroll data-options="easing: easeInOutQuart" href="#top"><img class="logo" src="images/logo.png"></a></span></h1>
+                      <nav>
+                          <a href="index.html">HOME</a>
+                          <a href="group.html">SHOP</a>
+                          <a href="index.html">COLLECTIONS</a>
+                          <a href="cart.html">Cart</a>
+                      </nav>
+                </div>
+                <div class="ha-header-bottom">
+                    <nav>
+                        <a data-scroll data-options="easing: easeInOutQuart" href="#sc1">FEATURED</a>
+                        <a data-scroll data-options="easing: easeInOutQuart" href="#sc2">COLLECTIONS</a>
+                        <a data-scroll data-options="easing: easeInOutQuart" href="#sc3">SHOP</a>
+                        <a data-scroll data-options="easing: easeInOutQuart" href="#sc4">TEAM</a>
+                        <a data-scroll data-options="easing: easeInOutQuart" href="#sc5">CONTACT</a>
+                        <a data-scroll data-options="easing: easeInOutQuart" href="#sc6">SOCIAL</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+ </div>
+        <!-- Introduction -->
+		
+		<style>
+		#container{width:1000px; margin:150px auto;}
+		hr.full{margin:25px}
+		.cart{margin:0 auto; font-family:'din-light';}
+		.top{text-align:center; text-transform:uppercase;}
+		.product{}
+		.product1{background:url(images/products/bag3.jpg); background-size:cover;width:200px; height:200px;}
+		.product2{background: url(images/products/glasses4.jpg); background-size:cover;width:200px; height:200px;}
+		.product3{background: url(images/products/hat5.jpg); background-size:cover;width:200px; height:200px;}
+		.tagtitle{text-align: center; }
+		.tagprice{text-align: center; color:#777; }
+		.qtyfield{ margin:0 auto;width:35px;height:30px; text-align:center;}
+		.tagsub{text-align: center; color:#222; }
+		.remove{ position:absolute;margin:70px 25px auto;background-image:url(images/close.png); background-repeat:no-repeat; height:45px; width:45px;}
+		.remove:hover{position:absolute;margin:70px 25px auto;background-image:url(images/close.png); background-position:right; background-repeat:no-repeat; height:45px; width:46px;}
+		.checkout{width:450px; height:auto; float:left;}
+		
+		</style>
+        <div id="container">
+        <table class="cart" width="100%" cellpadding="10px" cellspacing="20px" >
+  <tr class="top">
+    <td>&nbsp;</td>
+    <td>product</td>
+    <td>price</td>
+    <td>qty</td>
+    <td>subtotal</td>
+    <td>remove</td>
+  </tr>
+  <tr class="product" >
+    <td class="product1"></td>
+    <td class="tagtitle">Shitty Glassses</td>
+    <td class="tagprice">$1</td>
+    <td class="qty"><center><textarea class="qtyfield">1</textarea></center></td>
+    <td class="tagsub">30.99</td>
+    <td class="remove"></td>
+  </tr>
+  <tr class="product" >
+    <td class="product2"></td>
+    <td class="tagtitle">Lux Brown Satchel</td>
+    <td class="tagprice">$30.99</td>
+    <td class="qty"><center><textarea class="qtyfield">1</textarea></center></td>
+    <td class="tagsub">31.99</td>
+    <td class="remove"></td>
+  </tr>
+  <tr class="product" >
+    <td class="product3"></td>
+    <td class="tagtitle">Lux Brown Satchel</td>
+    <td class="tagprice">$20.99</td>
+    <td class="qty"><center><textarea class="qtyfield">1</textarea></center></td>
+    <td class="tagsub">52.98</td>
+    <td class="remove"></td>
+  </tr>
+</table>
+<hr class="full">
+<div class="checkout">
+	<div class="sub">
+</div>
+        
+        <!-- Features -->
+        
+
+ <!-- Javascript Navbar -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+        var $head = $( '#ha-header' );
+        $( '.ha-waypoint' ).each( function(i) {
+            var $el = $( this ),
+                animClassDown = $el.data( 'animateDown' ),
+                animClassUp = $el.data( 'animateUp' );
+
+            $el.waypoint( function( direction ) {
+                if( direction === 'down' && animClassDown ) {
+                    $head.attr('class', 'ha-header ' + animClassDown);
+                }
+                else if( direction === 'up' && animClassUp ){
+                    $head.attr('class', 'ha-header ' + animClassUp);
+                }
+            }, { offset: '100%' } );
+        } );
+    </script>
+    </body>
+</html>
